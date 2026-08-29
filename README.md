@@ -10,7 +10,7 @@ This repository contains projects across different technical domains, with a foc
 
 Security-focused projects covering concepts such as password security, authentication, encryption, secure data handling, and security analysis.
 
-➡️ **[Explore Cybersecurity Projects](./Cybersecurity-Projects/)**
+➡️ **[Explore Cybersecurity Projects](./CyberSecurity-Projects/)**
 
 ### 🌐 Web Development
 
