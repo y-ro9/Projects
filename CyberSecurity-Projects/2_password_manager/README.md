@@ -265,15 +265,15 @@ The project uses multiple security concepts.
 ## Components
 
     -|-----------------------|----------------------------------------------------------|-
-     |	Component	     |	Purpose							|
+     |	Component	     	 |	Purpose													|
     -|-----------------------|----------------------------------------------------------|-
-     |	Master Password	     |	Authentication and key derivation input			|
-     |	Random Salt	     |	Makes key derivation resistant to precomputed attacks	|
-     |	PBKDF2-HMAC-SHA256   |	Derives encryption key from master password		|
-     |	Fernet		     |	Encrypts and decrypts vault data			|
-     |	JSON		     |	Structures credential data before encryption		|
-     |	secrets		     |	Generates secure random passwords			|
-     |	getpass		     |	Prevents password input from being displayed		|
+     |	Master Password	     |	Authentication and key derivation input					|
+     |	Random Salt	     	 |	Makes key derivation resistant to precomputed attacks	|
+     |	PBKDF2-HMAC-SHA256   |	Derives encryption key from master password				|
+     |	Fernet		     	 |	Encrypts and decrypts vault data						|
+     |	JSON		     	 |	Structures credential data before encryption			|
+     |	secrets		     	 |	Generates secure random passwords						|
+     |	getpass		     	 |	Prevents password input from being displayed			|
     -|-----------------------|----------------------------------------------------------|-
 
 
@@ -306,29 +306,35 @@ Python package:
 cryptography
 
 Install the dependency using:
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 
 ## 🚀 Installation
 
 ### Step 1 — Clone Repository
-```git clone https://github.com/YOUR-USERNAME/password_manager.git
+```
+git clone https://github.com/YOUR-USERNAME/password_manager.git
 ```
 ### Step 2 — Enter Project Directory
-```cd password_manager
+```
+cd password_manager
 ```
 ### Step 3 — Install Dependencies
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 ### Step 4 — Run Application
-```python password_manager.py
+```
+python password_manager.py
 ```
 
 ## ▶️ Usage
 
 After starting the program, the application displays:
 
-```==================================================
+```
+==================================================
 🔐 PASSWORD MANAGER
 🛡️ Cybersecurity Project
 ==================================================
@@ -339,7 +345,8 @@ If a vault already exists, the application asks for the master password.
 
 After successful authentication, the main menu is displayed:
 
-```==================================================
+```
+==================================================
 🔐 PASSWORD MANAGER
 ==================================================
 1. ➕ Add Credential
@@ -353,11 +360,13 @@ After successful authentication, the main menu is displayed:
 ## ➕ Adding A Credential
 
 Select:
-```1
+```
+1
 ```
 Example:
 
-```➕ ADD CREDENTIAL
+```
+➕ ADD CREDENTIAL
 
 Website / Service: GitHub
 Username / Email: yash@example.com
@@ -371,19 +380,22 @@ The information is encrypted before being written to the vault.
 ## 👁️ Viewing A Credential
 
 Select:
-```2
+```
+2
 ```
 The application displays the saved services.
 
 Example:
-```📋 Saved Services:
+```
+📋 Saved Services:
 
 1. GitHub
 2. Gmail
 3. LinkedIn
 ```
 After selecting a service:
-```=============================================
+```
+=============================================
 🌐 Service : GitHub
 👤 Username: yash@example.com
 🔑 Password: MySecurePassword!
@@ -393,13 +405,15 @@ After selecting a service:
 ## 🗑️ Deleting A Credential
 
 Select:
-```3
+```
+3
 ```
 Then enter the service name.
 
 The application asks for confirmation before deleting the credential.
 
-```Delete 'GitHub'? (y/N): y
+```
+Delete 'GitHub'? (y/N): y
 
 ✅ Credential deleted successfully.
 ```
@@ -407,13 +421,16 @@ The application asks for confirmation before deleting the credential.
 ## 🔑 Generating A Password
 
 Select:
-```4
+```
+4
 ```
 Enter the desired length:
-```Password length (default 16): 16
+```
+Password length (default 16): 16
 ```
 Example result:
-```🔐 Generated Password:
+```
+🔐 Generated Password:
 
 vR7!qL2@xP9#kT4$
 ```
@@ -433,7 +450,8 @@ password_manager/
     └── output3.png
 
 After running the application, the following local files may also be created:
-```vault.dat
+```
+vault.dat
 vault.salt
 ```
 These files contain the encrypted vault and key-derivation salt.
@@ -443,21 +461,26 @@ Do not upload them to GitHub.
 ## 📸 Screenshots
 
 Project screenshots are stored inside:
-```screenshots/
+```
+screenshots/
 ```
 Recommended screenshots:
 ### 1. Main Menu
-```screenshots/output1.png
+```
+screenshots/output1.png
 ```
 ### 2. Adding / Viewing Credentials
-```screenshots/output2.png
+```
+screenshots/output2.png
 ```
 ### 3. Password Generator
-```screenshots/output3.png
+```
+screenshots/output3.png
 ```
 You can display them in this README using:
 
-```![Main Menu](screenshots/output1.png)
+```
+![Main Menu](screenshots/output1.png)
 
 ![Credential Management](screenshots/output2.png)
 
@@ -468,21 +491,21 @@ You can display them in this README using:
 
 The project can be tested using the following scenarios.
 
-|-------------------------------|-----------------------------------------|-
-|Test Case			|	Expected Result			  |
-|-------------------------------|-----------------------------------------|-
-|Create master password		|	Vault created successfully	  |
-|Incorrect master password	|	Access denied			  |
-|Correct master password	|	Vault unlocked			  |
-|Add credential			|	Credential saved		  |
-|View credential		|	Credential displayed		  |
-|Delete credential		|	Credential removed		  |
-|Generate password		|	Strong random password generated  |
-|Empty username			|	Input rejected			  |
-|Empty password			|	Input rejected			  |
-||Invalid generator length	|	Error handled			  |
-|Exit application		|	Vault locked			  |
-|-------------------------------|-----------------------------------------|-
+|-------------------------------|---------------------------------------|-
+|Test Case						|	Expected Result			  			|
+|-------------------------------|---------------------------------------|-
+|Create master password			|	Vault created successfully	  		|
+|Incorrect master password		|	Access denied			  			|
+|Correct master password		|	Vault unlocked			 		 	|
+|Add credential					|	Credential saved		  			|
+|View credential				|	Credential displayed		  		|
+|Delete credential				|	Credential removed		  			|
+|Generate password				|	Strong random password generated  	|
+|Empty username					|	Input rejected			  			|
+|Empty password					|	Input rejected			  			|
+|Invalid generator length		|	Error handled			  			|
+|Exit application				|	Vault locked			  			|
+|-------------------------------|---------------------------------------|-
 
 
 ## 🔐 Security Considerations
@@ -491,7 +514,8 @@ This project demonstrates several important cybersecurity concepts.
 
 ### Password Input Protection
 The project uses:
-```getpass()
+```
+getpass()
 ```
 so passwords are not displayed directly while being entered.
 
@@ -506,7 +530,8 @@ Fernet is used for symmetric encryption of the vault.
 
 ### Secure Random Generation
 The password generator uses Python's:
-```secrets
+```
+secrets
 ```
 module instead of the ordinary random module.
 
@@ -540,7 +565,8 @@ Create a secure web-based interface for managing credentials.
 
 ### 🖥️ GUI Application
 Develop a desktop interface using:
-```Tkinter
+```
+Tkinter
 PyQt
 CustomTkinter
 ```
@@ -568,7 +594,8 @@ Allow users to create and manage multiple encrypted vaults.
 
 ### 📊 Security Dashboard
 Provide information such as:
-```Weak Passwords
+```
+Weak Passwords
 Reused Passwords
 Old Passwords
 Password Strength
@@ -602,7 +629,8 @@ The application is designed for local credential storage.
 Passwords should never be uploaded to public repositories.
 
 Before publishing the project to GitHub, make sure the following files are excluded:
-```vault.dat
+```
+vault.dat
 vault.salt
 vault.tmp
 ```
@@ -614,7 +642,8 @@ The .gitignore file included in this project helps prevent accidental uploads.
 Never commit your actual password vault to GitHub.
 
 Do NOT upload:
-```vault.dat
+```
+vault.dat
 vault.salt
 ```
 Even though the vault is encrypted, private credential-storage files should not be placed in a public repository.
@@ -625,19 +654,24 @@ Even though the vault is encrypted, private credential-storage files should not 
 Contributions and suggestions are welcome.
 
 ### Clone the project
-```git clone https://github.com/YOUR-USERNAME/password_manager.git
+```
+git clone https://github.com/YOUR-USERNAME/password_manager.git
 ```
 ### Create a branch
-```git checkout -b feature/new-feature
+```
+git checkout -b feature/new-feature
 ```
 ### Make changes
-```git add .
+```
+git add .
 ```
 ### Commit changes
-```git commit -m "Add new feature"
+```
+git commit -m "Add new feature"
 ```
 ### Push branch
-```git push origin feature/new-feature
+```
+git push origin feature/new-feature
 ```
 
 Then create a Pull Request on GitHub.
@@ -654,7 +688,8 @@ If an open-source license is added to the repository, this section should be upd
 
 ### Yash Raj
 
-```Project     : Password Manager
+```
+Project     : Password Manager
 Domain      : Cybersecurity
 Language    : Python
 Interface   : Command Line
@@ -663,7 +698,8 @@ Year        : 2026
 ```
 
 ## 📌 Project Status
-```Project Status : ✅ Completed
+```
+Project Status : ✅ Completed
 Language       : Python
 Interface      : CLI
 Encryption     : Fernet
@@ -679,4 +715,3 @@ This project was developed as part of a cybersecurity project assignment to demo
 ## 🔐 Stay Secure. Protect Your Credentials. 🛡️
 
 If you found this project useful, consider giving the repository a ⭐ Star.
-
