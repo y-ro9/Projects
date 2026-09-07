@@ -263,7 +263,7 @@ The project uses multiple security concepts.
         Encrypted Vault
 ```
 ## Components
-
+```
     -|-----------------------|----------------------------------------------------------|-
      |	Component	     	 |	Purpose													|
     -|-----------------------|----------------------------------------------------------|-
@@ -275,7 +275,7 @@ The project uses multiple security concepts.
      |	secrets		     	 |	Generates secure random passwords						|
      |	getpass		     	 |	Prevents password input from being displayed			|
     -|-----------------------|----------------------------------------------------------|-
-
+```
 
 ## 🛠️ Technologies Used
 
@@ -436,7 +436,7 @@ vR7!qL2@xP9#kT4$
 ```
 
 ## 📁 Project Structure
-
+```
 password_manager/
 │
 ├── password_manager.py       # Main Python application
@@ -448,7 +448,7 @@ password_manager/
     ├── output1.png
     ├── output2.png
     └── output3.png
-
+```
 After running the application, the following local files may also be created:
 ```
 vault.dat
@@ -490,7 +490,7 @@ You can display them in this README using:
 ##🧪 Testing
 
 The project can be tested using the following scenarios.
-
+```
 |-------------------------------|---------------------------------------|-
 |Test Case						|	Expected Result			  			|
 |-------------------------------|---------------------------------------|-
@@ -507,7 +507,7 @@ The project can be tested using the following scenarios.
 |Exit application				|	Vault locked			  			|
 |-------------------------------|---------------------------------------|-
 
-
+```
 ## 🔐 Security Considerations
 
 This project demonstrates several important cybersecurity concepts.
