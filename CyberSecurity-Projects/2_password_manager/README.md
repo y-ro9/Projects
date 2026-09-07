@@ -127,7 +127,8 @@ Example:
 
 	Service: GitHub
 
-```=============================================
+```
+=============================================
 🌐 Service : GitHub
 👤 Username: user@example.com
 🔑 Password: ********
@@ -192,7 +193,8 @@ This makes the project suitable for local cybersecurity demonstrations and educa
 ## 🔄 How The System Works
 
 The overall workflow is:
-```                    ┌─────────────────────┐
+```
+                    ┌─────────────────────┐
                     │    Start Program    │
                     └──────────┬──────────┘
                                ↓
@@ -242,7 +244,8 @@ The overall workflow is:
 
 The project uses multiple security concepts.
 
-```		  Master Password
+```
+		  Master Password
 		       │
 		       ↓
 		   Random Salt
