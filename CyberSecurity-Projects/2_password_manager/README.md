@@ -127,12 +127,12 @@ Example:
 
 	Service: GitHub
 
-=============================================
+```=============================================
 🌐 Service : GitHub
 👤 Username: user@example.com
 🔑 Password: ********
 =============================================
-
+```
 Credentials are decrypted only when the vault is successfully unlocked.
 
 ### 🗑️ 6. Delete Credentials
@@ -192,7 +192,7 @@ This makes the project suitable for local cybersecurity demonstrations and educa
 ## 🔄 How The System Works
 
 The overall workflow is:
-                    ┌─────────────────────┐
+```                    ┌─────────────────────┐
                     │    Start Program    │
                     └──────────┬──────────┘
                                ↓
@@ -237,28 +237,28 @@ The overall workflow is:
                     │ Encrypted Vault     │
                     │ Updated & Saved     │
                     └─────────────────────┘
-                    
+```                    
 ## 🧠 Security Architecture
 
 The project uses multiple security concepts.
 
-		 Master Password
+```		  Master Password
 		       │
 		       ↓
 		   Random Salt
 		       │
 		       ↓
-	       PBKDF2-HMAC-SHA256
+       PBKDF2-HMAC-SHA256
 		       │
 		       ↓
-	     Derived Encryption Key
+     Derived Encryption Key
 		       │
 		       ↓
 		    Fernet
  		       │
 		       ↓
-	        Encrypted Vault
-
+        Encrypted Vault
+```
 ## Components
 
     -|-----------------------|----------------------------------------------------------|-
